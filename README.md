@@ -74,15 +74,15 @@ The project also aimed to move beyond identifying only the highest or lowest val
 2. What is the gender distribution across these 5 majors?
 3. Which majors have the highest and lowest median earnings?
 4. How does the unemployment rate vary across different major categories?
-5. Which majors are predominantly female (>70% women), and how do their median earnings compare with predominantly male majors?
-6. Are students in more popular majors more likely to find full-time, year-round employment?
-7. Is there a relationship between the number of full-time employees and median earnings?
-8. For each major category, what is the average number of low-wage jobs?
-9. How many majors have an unemployment rate above the hypothetical national average of 6%, and which categories do they belong to?
-10. Among the top 10 majors by total enrollment, which has the highest percentage of part-time workers?
-11. Which majors have the largest difference between 25th and 75th percentile earnings?
-12. What recommendations should leadership consider to improve graduate employment and earnings?
-13. Do majors with more employed graduates tend to have higher or lower median earnings?
+5. Identify majors that are predominantly female (more than 70% women). Do these majors have higher or lower median earnings compared to those that are predominantly male?
+6. Are students in more popular majors (by enrollment) more likely to find full-time, year-round employment?
+7. Investigate the relationship between the number of full-time employees and median earnings. Do majors with more full-time employees generally have higher median earnings?
+8. For each major category, calculate the average number of low-wage jobs. Which major categories have the highest and lowest average number of low-wage jobs?
+9. How many majors have an unemployment rate above the national average (assume a hypothetical national average of 6%)? Which major categories do they belong to?
+10. Among the top 10 majors by total enrollment, which one has the highest percentage of part-time workers?
+11. Investigate the spread of earnings in each major. Which majors have the largest difference between the 25th and 75th percentile earnings?
+12. Based on your analysis, what would you recommend to leadership to help improve the employment and earnings for college graduates?
+13. Come up with your own question and answer it.
 
 ---
 
@@ -133,15 +133,16 @@ The analysis and validation process included:
 - Validating PivotTable results against underlying data
 - Confirming that filters and thresholds matched the wording of each business question
 
-A key validation lesson involved unemployment rates. Percentage values could not simply be summed across majors. Category-level unemployment needed to be calculated using total unemployed graduates divided by the corresponding total labor force.
+One important validation involved unemployment rates. Percentage values could not simply be summed across majors. Category-level unemployment was calculated using total unemployed graduates divided by the corresponding total labor force.
 
 ### Limitations
 
 - The project uses a recent-graduate dataset and does not represent every possible factor affecting employment or earnings.
 - The analysis identifies relationships and patterns but does not establish causation.
 - Earnings are analyzed at the major level rather than individual graduate level.
-- The hypothetical 6% unemployment benchmark was provided for analytical comparison and should not be interpreted as an official current national benchmark.
+- The 6% unemployment benchmark is a hypothetical comparison specified by the project question and should not be interpreted as an official current national benchmark.
 - Additional variables such as geography, industry, occupation, experience, and advanced education could provide further context.
+- Some records contain missing values for specific fields and were retained when other fields remained useful for analysis.
 
 ---
 
@@ -274,11 +275,11 @@ The analysis included:
 * Identifying the highest and lowest median earnings
 * Calculating unemployment rates by major category
 * Comparing predominantly male and female majors
-* Investigating enrollment vs. full-time employment
-* Investigating full-time employment vs. median earnings
+* Investigating enrollment vs. full-time year-round employment rates
+* Investigating full-time employees vs. median earnings
 * Calculating average low-wage employment by major category
-* Comparing majors against a 6% unemployment benchmark
-* Calculating part-time employment percentages
+* Comparing individual majors against a hypothetical 6% unemployment benchmark
+* Calculating part-time employment percentages among the top 10 majors by enrollment
 * Measuring earnings variability using 25th and 75th percentile earnings
 * Developing leadership recommendations from analytical findings
 * Creating an independent relationship question for additional analysis
@@ -287,7 +288,7 @@ The analysis included:
 
 ## Share — Data Storytelling
 
-The findings were translated into storytelling visualizations designed to communicate the main takeaway directly through the chart title and visual emphasis.
+The findings were translated into storytelling visualizations designed to communicate the main takeaway directly through chart titles and visual emphasis.
 
 The workbook includes:
 
@@ -309,7 +310,7 @@ Independent Employment vs. Earnings Analysis
 
 ## Act — Leadership Recommendations
 
-The final stage converted the analytical findings into specific actions that leadership could evaluate when developing career-support programs and employment initiatives.
+The final stage converted analytical findings into specific actions that leadership could evaluate when developing career-support programs and employment initiatives.
 
 Each recommendation was connected to a measurable finding and included a metric that could be monitored after implementation.
 
@@ -319,7 +320,7 @@ Each recommendation was connected to a measurable finding and included a metric 
 
 ### Recent Graduates Employment & Earnings Analysis
 
-The final project summary consolidates the major findings from the 13 business questions into a single visual analysis.
+The final project summary consolidates major findings from the 13 business questions into a single visual analysis.
 
 The complete workbook contains the calculations, supporting data, PivotTables, charts, and leadership recommendations used throughout the project.
 
@@ -327,7 +328,7 @@ The complete workbook contains the calculations, supporting data, PivotTables, c
 
 ## 🔍 Key Findings
 
-### 1. Psychology combines the largest graduate population with relatively high unemployment
+### 1. Psychology combines the largest graduate population with the highest unemployment rate among the top 5 majors
 
 **What happened:**  
 Psychology was the most common major with approximately **393.7K graduates**.
@@ -343,7 +344,7 @@ Leadership should evaluate employment outcomes for high-enrollment majors rather
 ### 2. Social Science has the highest unemployment rate by major category
 
 **What happened:**  
-Social Science had an unemployment rate of **9.67%**, compared with **4.95% for Education**.
+Social Science had an unemployment rate of approximately **9.67%**, compared with approximately **4.95% for Education**.
 
 **Why it matters:**  
 Social Science graduates appear to experience greater difficulty transitioning into employment than graduates in several other major categories.
@@ -351,22 +352,24 @@ Social Science graduates appear to experience greater difficulty transitioning i
 **Business implication:**  
 Career-support resources may need to be more targeted toward categories experiencing elevated unemployment.
 
-### 3. Above-benchmark unemployment is widespread
+### 3. Above-benchmark unemployment affects the majority of majors
 
 **What happened:**  
-Approximately **68% of majors** exceeded the hypothetical **6% unemployment benchmark**.
+**104 of 173 majors**, or approximately **60.1%**, had unemployment rates above the hypothetical **6% benchmark**.
 
-Engineering accounted for **29 majors** above the benchmark.
+Engineering and Humanities & Liberal Arts each contained **14 majors** above the benchmark, the highest counts among the major categories.
 
 **Why it matters:**  
 Above-benchmark unemployment is not isolated to only a small number of majors.
 
 **Business implication:**  
-Leadership can use the benchmark to identify higher-risk majors and determine where additional career support may be most useful.
+Leadership can use the 6% benchmark to identify higher-risk majors and determine where additional career support may be most useful.
 
 ### 4. Predominantly male majors have higher average median earnings
 
 **What happened:**  
+There were **34 predominantly male majors** and **45 predominantly female majors** using the greater-than-70% threshold.
+
 Predominantly male majors averaged approximately **$52,094** in major-level median earnings.
 
 Predominantly female majors averaged approximately **$33,162**.
@@ -384,7 +387,7 @@ Leadership should investigate opportunities to strengthen pathways into higher-p
 **What happened:**  
 Communications & Journalism had an average of approximately **12.4K low-wage jobs**.
 
-Agriculture & Natural Resources had approximately **790**.
+Agriculture & Natural Resources had the lowest average at approximately **790**.
 
 **Why it matters:**  
 Employment alone does not fully describe graduate outcomes. Job quality and earning potential also matter.
@@ -392,13 +395,13 @@ Employment alone does not fully describe graduate outcomes. Job quality and earn
 **Business implication:**  
 Programs with high low-wage employment may benefit from stronger alignment with in-demand skills and higher-paying career pathways.
 
-### 6. Enrollment is not strongly associated with higher full-time employment rates
+### 6. Enrollment is not strongly associated with higher full-time year-round employment rates
 
 **What happened:**  
-The relationship between total enrollment and full-time year-round employment rates was weak.
+The relationship between total enrollment and full-time year-round employment rate was extremely weak.
 
 **Why it matters:**  
-Larger majors do not necessarily produce stronger full-time employment outcomes.
+Larger majors do not necessarily produce stronger full-time year-round employment outcomes.
 
 **Business implication:**  
 Employment success should be evaluated separately from program popularity.
@@ -406,7 +409,7 @@ Employment success should be evaluated separately from program popularity.
 ### 7. More full-time employees do not necessarily mean higher earnings
 
 **What happened:**  
-Majors with more full-time employees showed a slight negative relationship with median earnings.
+The relationship between the number of full-time employees and median earnings was slightly negative.
 
 **Why it matters:**  
 Employment volume and earning potential measure different aspects of graduate success.
@@ -414,18 +417,44 @@ Employment volume and earning potential measure different aspects of graduate su
 **Business implication:**  
 Leadership should evaluate both job placement and earnings instead of relying on employment counts alone.
 
-### 8. Astronomy & Astrophysics has the widest earnings range
+### 8. English Language and Literature has the highest part-time percentage among the top 10 most common majors
+
+**What happened:**  
+Among the 10 majors with the highest total enrollment, **English Language and Literature** had the highest percentage of part-time workers at approximately **29.70%**.
+
+Psychology followed at approximately **29.25%**.
+
+**Why it matters:**  
+A major can have a large graduate population while still having a substantial share of graduates working part-time.
+
+**Business implication:**  
+Leadership should consider employment quality, not only total employment or program enrollment, when evaluating graduate outcomes.
+
+### 9. Astronomy & Astrophysics has the widest earnings range
 
 **What happened:**  
 Astronomy & Astrophysics had a **$77.5K gap between the 25th and 75th percentile earnings**, the largest among the majors analyzed.
 
-Pharmaceutical Sciences followed with a **$70K gap**.
+Its 25th percentile earnings were approximately **$31.5K**, while its 75th percentile earnings were approximately **$109K**.
+
+Pharmacy Pharmaceutical Sciences and Administration followed with a **$70K gap**.
 
 **Why it matters:**  
 Graduates within the same major can experience significantly different earnings outcomes.
 
 **Business implication:**  
 Large earnings ranges warrant deeper investigation into the career paths, industries, or specializations associated with stronger outcomes.
+
+### 10. Majors with more employed graduates tend to have slightly lower median earnings
+
+**What happened:**  
+The independent analysis in Question 13 found a slight negative relationship between the number of employed graduates and median earnings.
+
+**Why it matters:**  
+Having more graduates employed does not necessarily mean that a major produces higher typical earnings.
+
+**Business implication:**  
+Graduate success should be evaluated using multiple measures rather than employment volume alone.
 
 ---
 
@@ -451,10 +480,10 @@ The analysis can help leadership:
 
 Recommendation | Why It Matters
 ---|---
-Strengthen employment support for Social Science students | Social Science has the highest unemployment rate at 9.67%
+Strengthen employment support for Social Science students | Social Science has the highest major-category unemployment rate at approximately 9.67%
 Expand pathways into higher-paying careers for predominantly female majors | Predominantly male majors average approximately $18.9K more in median earnings
-Strengthen in-demand skill development for Communications & Journalism | Communications & Journalism has the highest average number of low-wage jobs
-Target career support toward majors exceeding the 6% unemployment benchmark | Approximately 68% of majors exceed the benchmark
+Strengthen in-demand skill development for Communications & Journalism | Communications & Journalism has the highest average number of low-wage jobs at approximately 12.4K
+Target career support toward majors exceeding the 6% unemployment benchmark | 104 of 173 majors, or approximately 60.1%, exceed the benchmark
 Investigate career paths driving large earnings differences | Astronomy & Astrophysics has a $77.5K gap between the 25th and 75th percentile earnings
 
 ---
@@ -520,6 +549,8 @@ One of the biggest lessons was understanding the difference between counts, perc
 The project also strengthened my ability to move beyond simply identifying the highest or lowest value. A useful finding should explain what happened, what the result means, and how a stakeholder could respond.
 
 Another important takeaway was the value of validating the scope of an analysis. When a business question specifies a threshold such as more than 70% female or male representation, every qualifying major should be evaluated rather than relying on only a smaller sample.
+
+The project also reinforced the importance of validating filtered rankings. When a question specifies the top 10 majors by total enrollment, the population must first be ranked by enrollment before comparing another metric such as part-time employment.
 
 Finally, the project reinforced the importance of data storytelling. A visualization should not simply display data. The chart type, title, comparison, formatting, and supporting explanation should work together to communicate the takeaway clearly.
 
